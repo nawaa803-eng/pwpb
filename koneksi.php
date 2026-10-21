@@ -1,12 +1,10 @@
 <?php
 $host = "localhost";
 $user = "root";
-$pass = "";
-$db   = "db_php_xirpl";
+$password = "";
+$database = "db_php_xirpl";
 
-$koneksi = mysqli_connect($host, $user, $pass, $db);
+$koneksi = mysqli_connect($host, $user, $password, $database);
 
 if (!$koneksi) {
     die("Koneksi gagal: " . mysqli_connect_error());
-}
-?>
